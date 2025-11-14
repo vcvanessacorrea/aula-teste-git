@@ -1,15 +1,171 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guia sobre Git e GitHub</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #0d1117;
+      color: #e6edf3;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #161b22;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid #58a6ff;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      color: #58a6ff;
+    }
+
+    nav {
+      background-color: #21262d;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: #e6edf3;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #58a6ff;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+      background: #161b22;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(88, 166, 255, 0.1);
+    }
+
+    h2 {
+      color: #58a6ff;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #161b22;
+      border-top: 2px solid #58a6ff;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #58a6ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    .git-logo {
+      display: block;
+      margin: 0 auto 20px auto;
+      width: 100px;
+      border-radius: 10px;
+    }
+
+    code {
+      background: #21262d;
+      padding: 4px 8px;
+      border-radius: 6px;
+      color: #ffb86c;
+      font-family: monospace;
+    }
+  </style>
 </head>
-
 <body>
-    <h1>Aula teste de Git e Github</h1>
-    <p>Agora aprendendo a atualizar o repositório!</p>
-</body>
+  <header>
+    <h1>Guia sobre Git e GitHub</h1>
+  </header>
 
+  <nav>
+    <a href="#git">O que é Git</a>
+    <a href="#github">O que é GitHub</a>
+    <a href="#comandos">Comandos básicos</a>
+  </nav>
+
+  <main>
+    <section id="git">
+      <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="Logo Git" class="git-logo">
+      <h2>O que é Git?</h2>
+      <p>O <strong>Git</strong> é um sistema de controle de versão criado por <strong>Linus Torvalds</strong>, o mesmo criador do Linux. Ele permite que desenvolvedores acompanhem mudanças no código ao longo do tempo, colaborem em equipe e revertam alterações se necessário.</p>
+      <p>Com o Git, você pode:</p>
+      <ul>
+        <li>Controlar versões de um projeto localmente.</li>
+        <li>Comparar e mesclar mudanças entre arquivos.</li>
+        <li>Trabalhar em várias ramificações (<code>branches</code>).</li>
+        <li>Manter um histórico detalhado de todas as alterações.</li>
+      </ul>
+    </section>
+
+    <section id="github">
+      <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Logo GitHub" class="git-logo">
+      <h2>O que é GitHub?</h2>
+      <p>O <strong>GitHub</strong> é uma plataforma online que usa o Git para armazenar e compartilhar códigos. Ele é muito usado por desenvolvedores para hospedar repositórios e colaborar em projetos.</p>
+      <p>No GitHub, você pode:</p>
+      <ul>
+        <li>Armazenar seus projetos na nuvem.</li>
+        <li>Contribuir com projetos open source.</li>
+        <li>Criar portfólios de programação.</li>
+        <li>Publicar sites com o <strong>GitHub Pages</strong>.</li>
+      </ul>
+    </section>
+
+    <section id="comandos">
+      <h2>Principais comandos do Git</h2>
+      <ul>
+        <li><code>git init</code> – Inicia um novo repositório Git.</li>
+        <li><code>git status</code> – Mostra o estado atual dos arquivos.</li>
+        <li><code>git add .</code> – Adiciona alterações para serem salvas.</li>
+        <li><code>git commit -m "mensagem"</code> – Salva as alterações no histórico.</li>
+        <li><code>git branch</code> – Lista ou cria ramificações do projeto.</li>
+        <li><code>git checkout nome-da-branch</code> – Muda de branch.</li>
+        <li><code>git merge nome-da-branch</code> – Mescla uma branch com a atual.</li>
+        <li><code>git remote add origin URL</code> – Conecta o projeto ao GitHub.</li>
+        <li><code>git push -u origin main</code> – Envia os arquivos para o repositório remoto.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Feito com ❤️ por <a href="https://github.com/seuusuario" target="_blank">seuusuario</a> | 2025</p>
+  </footer>
+</body>
 </html>
